@@ -48,6 +48,7 @@ This repository contains the complete source code for the QiForge website — bu
 │   ├── team/           # Team member images (uniform 1:1 ratio)
 │   ├── icons/          # Site icons and favicon
 │   └── projects/       # Sneak Peek project images
+├── LICENCE             # Official QiForge Licence
 └── README.md           # This file
 ```
 
