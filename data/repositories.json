@@ -1,0 +1,57 @@
+[
+  {
+    "id": "R0001",
+    "name": "QiForge-Website",
+    "description": "The official website of QiForge — a student-led tech organization fostering collaboration, innovation, and open learning through real-world projects.",
+    "visibility": "Public",
+    "tech_stack": ["HTML", "CSS", "JavaScript"],
+    "team_ids": [],
+    "contributors": [],
+    "license": "QiForge Public Attribution License (QPAL v1.0)",
+    "repository_link": "https://github.com/QiForge/QiForge-Website"
+  },
+  {
+    "id": "R0002",
+    "name": "Smart-Education-App",
+    "description": "A modern educational platform designed to simplify learning and student-teacher collaboration.",
+    "visibility": "Public",
+    "tech_stack": ["HTML", "CSS", "JavaScript"],
+    "team_ids": [],
+    "contributors": [],
+    "license": "MIT License",
+    "repository_link": "https://github.com/QiForge/Smart-Education-App"
+  },
+  {
+    "id": "R0003",
+    "name": "Student-Dashboard",
+    "description": "An intuitive dashboard system for students to track courses, submissions, and performance metrics.",
+    "visibility": "Public",
+    "tech_stack": ["HTML", "CSS", "JavaScript"],
+    "team_ids": [],
+    "contributors": [],
+    "license": "MIT License",
+    "repository_link": "https://github.com/QiForge/Student-Dashboard"
+  },
+  {
+    "id": "R0004",
+    "name": "Hostel-Mess-Management-System",
+    "description": "A front-end mini project for managing hostel and mess operations — built with HTML, CSS, and JavaScript by the team Falcon (CSE B.Tech).",
+    "visibility": "Public",
+    "tech_stack": ["HTML", "CSS", "JavaScript"],
+    "team_ids": [],
+    "contributors": [],
+    "license": "Unlicensed",
+    "repository_link": "https://github.com/QiForge/Hostel-Mess-Management-System"
+  },
+  {
+    "id": "R0005",
+    "name": "Notice-and-Result-DashBoard",
+    "description": "A dashboard for displaying academic notices and results with a clean, responsive layout.",
+    "visibility": "Public",
+    "tech_stack": ["HTML", "CSS", "JavaScript"],
+    "team_ids": [],
+    "contributors": [],
+    "license": "MIT License",
+    "repository_link": "https://github.com/QiForge/Notice-and-Result-DashBoard"
+  }
+]
