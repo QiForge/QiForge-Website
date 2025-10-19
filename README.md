@@ -1,28 +1,31 @@
 # 🌐 QiForge — Official Organization Website
 
-Welcome to the **official website of QiForge**, an open student-led tech organization focused on collaboration, innovation, and skill-building through real-world projects.
+[![Netlify Status](https://api.netlify.com/api/v1/badges/2aba665e-38af-4e7f-8cad-b2926827c261/deploy-status)](https://app.netlify.com/sites/qiforge-website/deploys)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
+![Netlify](https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)
+![Hostinger](https://img.shields.io/badge/Hostinger-673AB7?style=for-the-badge&logoColor=white)
 
-This repository contains the complete source code for the QiForge website — built from scratch with **HTML, CSS, and JavaScript**, featuring a glassmorphic UI, responsive design, and dynamic carousels for the team and project showcase.
+> 🔗 **Live Website:** [https://qiforge.site](https://qiforge.site)
+
+---
+
+## 🧭 Overview
+
+**QiForge** is a student-led innovation studio empowering creators and developers to transform ideas into real-world projects.  
+This repository hosts the full source code for the **official QiForge website**, featuring a glassmorphic UI, smooth animations, responsive layouts, and carousels showcasing projects and team members.
 
 ---
 
 ## 🚀 Features
 
-- **Modern Glassmorphic UI**  
-  Sleek, minimal, and responsive design with frosted blur effects throughout the site.
-
-- **Responsive Navigation Bar + Sidebar**  
-  - Fixed top navigation bar for desktop.  
-  - Hamburger-triggered glassmorphic sidebar for mobile with smooth transitions.
-
-- **Infinite Team Carousel**  
-  Smooth-scrolling infinite carousel showcasing all QiForge team members.
-
-- **Sneak Peek Carousel (3D Tilt)**  
-  Preview upcoming projects with parallax tilt animation powered by vanilla JS and CSS transforms.
-
-- **Join QiForge Button**  
-  Prominent CTA section encouraging new members to join the organization.
+- ✨ **Modern Glassmorphic Design** — frosted blur & subtle gradients  
+- 📱 **Responsive Navigation + Sidebar** — works seamlessly across devices  
+- 👥 **Infinite Team Carousel** — smooth auto-scroll team showcase  
+- 🌀 **Sneak Peek Carousel (3D Tilt)** — preview projects with parallax tilt  
+- 💬 **Join QiForge CTA** — simple and elegant user form for new members  
 
 ---
 
@@ -31,9 +34,24 @@ This repository contains the complete source code for the QiForge website — bu
 | Layer | Technologies Used |
 |-------|--------------------|
 | **Frontend** | HTML5, CSS3, JavaScript (Vanilla) |
-| **Animations / Effects** | CSS Transitions, 3D Parallax, Glassmorphism |
+| **UI Effects** | CSS Transitions, Parallax, Glassmorphism |
 | **Version Control** | Git & GitHub |
-| **Current Version** | v0.1|
+| **Hosting** | Netlify (CI/CD) |
+| **Domain** | Hostinger (`qiforge.site`) |
+| **Current Version** | v0.1 |
+
+---
+
+## ⚙️ Deployment Workflow
+
+The QiForge site uses a **fully automated deployment pipeline**:
+
+1. Edit and commit changes locally on your system.  
+2. Push updates to the GitHub `main` branch.  
+3. Netlify automatically rebuilds and redeploys the site.  
+4. Updates instantly go live at [https://qiforge.site](https://qiforge.site).  
+
+🔐 Includes automatic HTTPS via **Let’s Encrypt SSL**.
 
 ---
 
@@ -42,70 +60,80 @@ This repository contains the complete source code for the QiForge website — bu
 ```
 /
 ├── index.html          # Main landing page
-├── style.css           # Stylesheet (includes carousels, sidebar, etc.)
-├── script.js           # JavaScript for interactions and animations
+├── style.css           # Global styles (carousels, sidebar, etc.)
+├── script.js           # Interactive scripts and animations
 ├── assets/
-│   ├── team/           # Team member images (uniform 1:1 ratio)
-│   ├── icons/          # Site icons and favicon
-│   └── projects/       # Sneak Peek project images
-├── LICENCE             # Official QiForge Licence
+│   ├── team/           # Team member photos
+│   ├── icons/          # Site icons, logos, and favicon
+│   └── projects/       # Sneak Peek project previews
+├── LICENSE             # QiForge Open Learning License
 └── README.md           # This file
 ```
 
 ---
 
-## ⚙️ Setup and Run Locally
+## 👥 Team QiForge
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/<your-username>/<your-repo-name>.git
-   cd <your-repo-name>
-   ```
+**Founder & Lead Developer**  
+💡 **Yogesh Kumar Mallik**
 
-2. **Open in browser**
-   Simply open `index.html` in your browser or use VS Code Live Server for best results.
+**Names will be added here as on contributes**  
+
+*(and many more creative minds showcased on our site!)*
 
 ---
 
-## 👥 Team QiForge
+## 🪶 Founder’s Message
 
-**Organization Founder & Lead Developer**  
-💡 **Yogesh Kumar Mallik**
-
-**Core Team — Code Falcon**
-- Saurabh Pandey (Vice Leader)  
-- Ratan Gupta  
-- Naval Kishor  
-
-*(and many more talented QiForge members featured on the team carousel!)*
+> QiForge was born from the simple joy of learning to build and publish something real.  
+> My first website was a small portfolio made by following [SuperSimpleDev](https://www.youtube.com/c/SuperSimpleDev) — that project gave me the confidence to take the next step.  
+>
+> What started as a beginner’s experiment has now grown into a student-led innovation studio where creativity, collaboration, and code come together.  
+>
+> **QiForge** represents a mindset — that great things are forged, not found;  
+> that with curiosity and persistence, even small beginnings can spark something extraordinary.  
+>
+> — *Yogesh Kumar Mallik*  
+> **Founder, QiForge**  
+> **Babu Banarasi Das Institute of Technology**
 
 ---
 
 ## 🧩 License
 
-This project is released under the **QiForge Open Learning License (QOLL-1.0)** — feel free to fork, modify, and use it for learning and collaboration. But you forbidden to commit any act that directly or indirectly harms **QiForge**'s intrest.
+This project is released under the **QiForge Open Learning License (QOLL-1.0)**.  
+You may fork, modify, and use it for learning or collaboration — but no act should directly or indirectly harm **QiForge’s** interests.
 
 ---
 
 ## 💬 Contribute
 
-Want to contribute to QiForge?  
-- Fork this repo  
-- Create a feature branch  
-- Commit your changes  
-- Submit a pull request  
+We welcome collaboration and open participation!  
 
-New ideas, designs, and code improvements are always welcome!
+1. Fork this repository  
+2. Create a new feature branch  
+3. Commit your improvements  
+4. Submit a pull request  
+
+💡 *Ideas, designs, and optimizations are always appreciated.*
 
 ---
 
 ## 💜 Credits
 
 - **Design & Development:** QiForge Team  
-- **3D Parallax & Glass Effects:** Vanilla JS + CSS Transforms  
-- **Organization Domain:** [qiforge.site](https://qiforge.site)  
+- **Effects:** Vanilla JS + CSS Transforms  
+- **Hosting & SSL:** [Netlify](https://www.netlify.com)  
+- **Domain Provider:** [Hostinger](https://www.hostinger.in)  
+- **Organization Website:** [qiforge.site](https://qiforge.site)
 
 ---
 
 ### 🔗 Stay Connected
-Follow QiForge’s updates, projects, and team activities as we continue to build innovative, open-source solutions for students by students.
+
+Follow QiForge’s updates, projects, and collaborations as we continue building innovative, open-source solutions —  
+**for students, by students.**
+
+---
+
+📅 **Last Updated:** 20 October 2025
