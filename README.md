@@ -77,7 +77,7 @@ The QiForge site uses a **fully automated deployment pipeline**:
 **Founder & Lead Developer**  
 💡 **Yogesh Kumar Mallik**
 
-**Names will be added here as on contributes**  
+**Names will be added here as one contributes**  
 
 *(and many more creative minds showcased on our site!)*
 
