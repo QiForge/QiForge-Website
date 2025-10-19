@@ -83,7 +83,7 @@ This repository contains the complete source code for the QiForge website — bu
 
 ## 🧩 License
 
-This project is released under the **QiForge Open Learning License (QOLL-1.0)** — feel free to fork, modify, and use it for learning and collaboration. But you forbidden to commit any act that directly or indirectly harms **QiForge**'s Intrenst.
+This project is released under the **QiForge Open Learning License (QOLL-1.0)** — feel free to fork, modify, and use it for learning and collaboration. But you forbidden to commit any act that directly or indirectly harms **QiForge**'s intrest.
 
 ---
 
