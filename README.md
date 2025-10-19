@@ -66,22 +66,6 @@ This repository contains the complete source code for the QiForge website — bu
 
 ---
 
-## 🌍 Hosting (Recommended)
-
-You can host this site **for free** using:
-
-### 🔹 GitHub Pages
-1. Go to your repo’s **Settings → Pages**  
-2. Under **Branch**, select `main` → `/root`  
-3. Click **Save** — your site will go live in a few minutes.
-
-OR
-
-### 🔹 Netlify
-Drag and drop your project folder at [https://app.netlify.com/drop](https://app.netlify.com/drop)
-
----
-
 ## 👥 Team QiForge
 
 **Organization Founder & Lead Developer**  
