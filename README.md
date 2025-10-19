@@ -33,7 +33,7 @@ This repository contains the complete source code for the QiForge website — bu
 | **Frontend** | HTML5, CSS3, JavaScript (Vanilla) |
 | **Animations / Effects** | CSS Transitions, 3D Parallax, Glassmorphism |
 | **Version Control** | Git & GitHub |
-| **Deployment (Recommended)** | GitHub Pages / Netlify |
+| **Current Version** | v0.1|
 
 ---
 
@@ -83,7 +83,7 @@ This repository contains the complete source code for the QiForge website — bu
 
 ## 🧩 License
 
-This project is released under the **MIT License** — feel free to fork, modify, and use it for learning and collaboration.
+This project is released under the **QiForge Open Learning License (QOLL-1.0)** — feel free to fork, modify, and use it for learning and collaboration. But you forbidden to commit any act that directly or indirectly harms **QiForge**'s Intrenst.
 
 ---
 
