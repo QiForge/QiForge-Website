@@ -65,8 +65,8 @@ header {
 }
 
 .logo img {
-  width: 26px;
-  height: 26px;
+  width: 50px;
+  height: 50px;
   object-fit: contain;
   vertical-align: middle;
   transition: transform 0.3s ease, filter 0.3s ease;
