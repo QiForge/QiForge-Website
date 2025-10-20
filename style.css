@@ -65,8 +65,8 @@ header {
 }
 
 .logo img {
-  width: 26px;
-  height: 26px;
+  width: 50px;
+  height: 50px;
   object-fit: contain;
   vertical-align: middle;
   transition: transform 0.3s ease, filter 0.3s ease;
@@ -259,7 +259,7 @@ header {
 .hero {
   background:
     linear-gradient(rgba(11, 17, 32, 0.92), rgba(11, 17, 32, 0.96)),
-    url('assets/background-img.avif')
+    url('assets/background-img_converted.webp')
     center/cover no-repeat;
   color: #fff;
   text-align: center;
