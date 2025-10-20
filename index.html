@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+  <!-- Basic SEO -->
+  <meta name="description" content="QiForge — a student-led innovation studio empowering creators to turn ideas into reality.">
+  <meta name="keywords" content="QiForge, student projects, code falcon, innovation, college tech team, web development">
+  <meta name="author" content="QiForge Team">
+
+  <!-- Social Media (Open Graph) -->
+  <meta property="og:title" content="QiForge | Forging Ideas into Reality">
+  <meta property="og:description" content="A student-led innovation studio empowering creators and developers.">
+  <meta property="og:image" content="https://qiforge.site/assets/og-preview.png">
+  <meta property="og:url" content="https://qiforge.site">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <title>QiForge | Forging Ideas into Reality</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/icons/favicon.png">
+
+  <!-- Mobile Browser Theme Color -->
+  <meta name="theme-color" content="#0b1221">
+
+  <!-- Fonts & Stylesheet -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" href="style.css" as="style" onload="this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="style.css"></noscript>
+  <script defer src="script.js"></script>
+
+  <!-- Mobile & App Settings -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-status-bar-style" content="black-translucent">
+
+</head>
+<body>
+
+  <!-- ==================================================
+       HEADER + NAVIGATION
+       ================================================== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <img src="assets/icons/favicon.png" alt="QiForge logo">
+        <span>QiForge</span>
+      </div>
+
+
+      <!-- Desktop nav -->
+      <nav class="main-nav">
+        <a href="#projects">Projects</a>
+        <a href="#teams">Teams</a>
+        <a href="#members">Members</a>
+        <a href="#join" class="btn btn-primary join-btn">Join QiForge</a>
+      </nav>
+
+      <!-- Mobile hamburger toggle -->
+      <button id="menu-toggle" class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <!-- ==================================================
+      SIDEBAR (Right Slide + Glassmorphic + Working Close)
+      ================================================== -->
+  <div id="overlay" class="overlay" hidden></div>
+
+  <aside id="sidebar" class="sidebar" aria-hidden="true">
+    <button id="close-sidebar" class="close-sidebar" aria-label="Close sidebar">×</button>
+
+    <nav class="sidebar-nav" aria-label="Sidebar Navigation">
+      <a href="#home" class="sidebar-link">Home</a>
+      <a href="#projects" class="sidebar-link">Projects</a>
+      <a href="#teams" class="sidebar-link">Teams</a>
+      <a href="#members" class="sidebar-link">Members</a>
+
+      <div class="join-section">
+        <a href="#join" class="btn btn-primary join-btn">Join QiForge</a>
+      </div>
+    </nav>
+  </aside>
+
+
+
+
+  <!-- ==================================================
+       HERO SECTION
+       ================================================== -->
+  <section class="hero" id="home">
+    <div class="container hero-inner">
+      <div class="hero-content">
+        <h1>Forging Ideas into Reality</h1>
+        <p>A student-led innovation studio empowering creators and exploring innovative ideas.</p>
+
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-tertiary">Explore Projects</a>
+          <a href="#join" class="btn btn-primary">Join QiForge</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================================================
+       MOTIVE / WHAT WE DO
+       ================================================== -->
+  <section class="motive">
+    <div class="container">
+      <h2>Our Motive & Community</h2>
+      <p>
+        QiForge exists to empower students to create impactful tech projects and explore innovative ideas.
+        Based at <strong>Babu Banarasi Das Institute of Technology</strong>, we bring together students from diverse fields to collaborate,
+        build, and learn by doing.
+      </p>
+    </div>
+  </section>
+
+  <!-- ==================================================
+       CORE NAVIGATION CARDS (PROJECTS / TEAMS / MEMBERS)
+       ================================================== -->
+  <section class="core-cards">
+    <div class="container">
+      <h2>Explore QiForge</h2>
+
+      <div class="core-grid">
+        <!-- Projects Card -->
+        <article class="core-card" aria-labelledby="core-projects">
+          <div class="core-icon" aria-hidden="true">
+            <!-- inline SVG - Projects -->
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="8" y="10" width="32" height="20" rx="2.5" stroke="white" stroke-width="2.5"/>
+              <path d="M6 34h36" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M22 18l-4 4 4 4" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M26 26l4-4-4-4" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 id="core-projects">Projects</h3>
+          <p>Explore our innovative student projects and initiatives across multiple domains.</p>
+          <a href="#projects" class="btn btn-tertiary">View Projects</a>
+        </article>
+
+        <!-- Teams Card -->
+        <article class="core-card" aria-labelledby="core-teams">
+          <div class="core-icon" aria-hidden="true">
+            <!-- inline SVG - Teams -->
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="24" cy="18" r="5" stroke="white" stroke-width="2.5"/>
+              <circle cx="14" cy="20" r="3.5" stroke="white" stroke-width="2.5"/>
+              <circle cx="34" cy="20" r="3.5" stroke="white" stroke-width="2.5"/>
+              <path d="M11 31c0-4 5-7 9-7h8c4 0 9 3 9 7" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M8 31c0-3 3.5-5.5 7-5.5" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M40 31c0-3-3.5-5.5-7-5.5" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 id="core-teams">Teams</h3>
+          <p>Discover our development teams and how they collaborate to build the QiForge ecosystem.</p>
+          <a href="#teams" class="btn btn-tertiary">Meet Teams</a>
+        </article>
+
+        <!-- Members Card -->
+        <article class="core-card" aria-labelledby="core-members">
+          <div class="core-icon" aria-hidden="true">
+            <!-- inline SVG - Members -->
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="19" cy="18" r="5" stroke="white" stroke-width="2.5"/>
+              <path d="M8 32c0-5.2 6-8 11-8s11 2.8 11 8" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M30 27l3.8 3.8L40 24.5" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 id="core-members">Members</h3>
+          <p>Meet the people behind QiForge’s creativity, leadership, and continuous innovation.</p>
+          <a href="#members" class="btn btn-tertiary">View Members</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================================================
+       FEATURED PROJECTS
+       ================================================== -->
+  <section class="featured-projects" id="projects">
+    <div class="container">
+      <h2>Featured Projects</h2>
+
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <article class="proj-card">
+          <div class="proj-logo">
+            <img src="assets/Icons/hostel-mess-management.png" alt="Hackathon Admin System Logo">
+          </div>
+          <div class="proj-info">
+            <h3>Student Dashboard</h3>
+            <p>A full-stack event management platform designed for college students.</p>
+          </div>
+          <div class="proj-buttons">
+            <!-- <a href="https://hackathon.qiforge.site" target="_blank" class="btn btn-primary">Live Demo</a> -->
+            <a href="https://github.com/QiForge/Student-Dashboard.git" target="_blank" class="btn btn-secondary">View Repository</a>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="proj-card">
+          <div class="proj-logo">
+            <img src="assets/Icons/student-dashboard.png" alt="Code Falcon Logo">
+          </div>
+          <div class="proj-info">
+            <h3>Hostel & Mess Management</h3>
+            <p>a project dedicated to solvings issues related to Hostel and mess management.</p>
+          </div>
+          <div class="proj-buttons">
+            <!-- <a href="https://codefalcon.qiforge.site" target="_blank" class="btn btn-primary">Live Demo</a> -->
+            <a href="https://github.com/QiForge/Hostel-Mess-Management-System.git" target="_blank" class="btn btn-secondary">View Repository</a>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="proj-card">
+          <div class="proj-logo">
+            <img src="assets/Icons/favicon.png" alt="QiForge Website Logo">
+          </div>
+          <div class="proj-info">
+            <h3>QiForge Official Website</h3>
+            <p>The organization’s main website, showcasing our projects, teams, and mission.</p>
+          </div>
+          <div class="proj-buttons">
+            <!-- <a href="#" class="btn btn-tertiary">Learn More</a> -->
+            <a href="https://github.com/QiForge/QiForge-Website.git" target="_blank" class="btn btn-secondary">View Repository</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================================================
+       TEAM CAROUSEL SECTION (Pure CSS)
+       ================================================== -->
+  <section class="team-carousel-section">
+    <h2>Meet the Team</h2>
+    <div class="team-slider">
+      <div class="team-track">
+        <div class="team-card"><img src="assets/team/yogesh.jpeg" alt="Yogesh"><p>Yogesh Kumar Mallik</p></div>
+        <div class="team-card"><img src="assets/team/saurabh.jpeg" alt="Saurabh"><p>Saurabh Pandey</p></div>
+        <div class="team-card"><img src="assets/team/ratan.jpeg" alt="Ratan"><p>Ratan Gupta</p></div>
+        <div class="team-card"><img src="assets/team/naval.jpeg" alt="Naval"><p>Naval Kishor</p></div>
+        <div class="team-card"><img src="assets/team/abhayjeet.jpeg" alt="Abhayjeet"><p>Abhayjeet Kumar</p></div>
+        <div class="team-card"><img src="assets/team/amit.jpeg" alt="Amit"><p>Amit Kumar</p></div>
+        <div class="team-card"><img src="assets/team/anshu.jpeg" alt="Anshu"><p>Anshu Singh</p></div>
+        <div class="team-card"><img src="assets/team/chandan.jpeg" alt="Chandan"><p>Chandan Kumar</p></div>
+        <div class="team-card"><img src="assets/team/krish.jpeg" alt="Krish"><p>Krish Kumar</p></div>
+        <div class="team-card"><img src="assets/team/sameer.jpeg" alt="Sameer"><p>Sameer Khan</p></div>
+        <div class="team-card"><img src="assets/team/prashant.jpeg" alt="Prashant"><p>Prashant Sharma</p></div>
+        <div class="team-card"><img src="assets/team/sashikant.jpeg" alt="Shashikant"><p>Shashikant Thakur</p></div>
+        <div class="team-card"><img src="assets/team/udit.jpeg" alt="Udit"><p>Udit Sharma</p></div>
+        <div class="team-card"><img src="assets/team/vikhyat.jpeg" alt="Vikhyat"><p>Vikhyat Srivastava</p></div>
+        <div class="team-card"><img src="assets/team/vivek.jpeg" alt="Vivek"><p>Vivek</p></div>
+
+        <!-- duplicate full set once for seamless scroll -->
+        <div class="team-card"><img src="assets/team/yogesh.jpeg" alt="Yogesh"><p>Yogesh Kumar Mallik</p></div>
+        <div class="team-card"><img src="assets/team/saurabh.jpeg" alt="Saurabh"><p>Saurabh Pandey</p></div>
+        <div class="team-card"><img src="assets/team/ratan.jpeg" alt="Ratan"><p>Ratan Gupta</p></div>
+        <div class="team-card"><img src="assets/team/naval.jpeg" alt="Naval"><p>Naval Kishor</p></div>
+        <div class="team-card"><img src="assets/team/abhayjeet.jpeg" alt="Abhayjeet"><p>Abhayjeet Kumar</p></div>
+        <div class="team-card"><img src="assets/team/amit.jpeg" alt="Amit"><p>Amit Kumar</p></div>
+        <div class="team-card"><img src="assets/team/anshu.jpeg" alt="Anshu"><p>Anshu Singh</p></div>
+        <div class="team-card"><img src="assets/team/chandan.jpeg" alt="Chandan"><p>Chandan Kumar</p></div>
+        <div class="team-card"><img src="assets/team/krish.jpeg" alt="Krish"><p>Krish Kumar</p></div>
+        <div class="team-card"><img src="assets/team/sameer.jpeg" alt="Sameer"><p>Sameer Khan</p></div>
+        <div class="team-card"><img src="assets/team/prashant.jpeg" alt="Prashant"><p>Prashant Sharma</p></div>
+        <div class="team-card"><img src="assets/team/shashikant.jpeg" alt="Shashikant"><p>Shashikant Thakur</p></div>
+        <div class="team-card"><img src="assets/team/udit.jpeg" alt="Udit"><p>Udit Sharma</p></div>
+        <div class="team-card"><img src="assets/team/vikhyat.jpeg" alt="Vikhyat"><p>Vikhyat Srivastava</p></div>
+        <div class="team-card"><img src="assets/team/vivek.jpeg" alt="Vivek"><p>Vivek</p></div>
+      </div>
+    </div>
+
+    <a href="team.html" class="btn btn-tertiary view-team-btn">View Full Team →</a>
+  </section>
+
+
+
+  <!-- ==================================================
+       SNEAK PEEK CAROUSEL
+       ================================================== -->
+  <section class="sneak-peek">
+    <h2>Sneak Peek</h2>
+    <div class="peek-slider">
+      <div class="peek-track">
+        <div class="peek-card"><img src="assets/carousel/project-img-1.png" alt="Preview 1"></div>
+        <div class="peek-card"><img src="assets/carousel/project-img-2.png" alt="Preview 2"></div>
+        <div class="peek-card"><img src="assets/carousel/project-img-3.png" alt="Preview 3"></div>
+        <div class="peek-card"><img src="assets/carousel/project-img-4.png" alt="Preview 4"></div>
+        <div class="peek-card"><img src="assets/carousel/project-img-5.png" alt="Preview 5"></div>
+        <!-- Duplicates for infinite scroll -->
+        <div class="peek-card"><img src="assets/carousel/project-img-1.png" alt="Preview 1 duplicate"></div>
+        <div class="peek-card"><img src="assets/carousel/project-img-2.png" alt="Preview 2 duplicate"></div>
+        <div class="peek-card"><img src="assets/carousel/project-img-3.png" alt="Preview 3 duplicate"></div>
+        <div class="peek-card"><img src="assets/carousel/project-img-4.png" alt="Preview 4 duplicate"></div>
+        <div class="peek-card"><img src="assets/carousel/project-img-5.png" alt="Preview 5 duplicate"></div>
+
+        <div class="team-card"><img src="assets/team/yogesh.jpeg" alt="Yogesh"><p>Yogesh Kumar Mallik</p></div>
+        <div class="team-card"><img src="assets/team/saurabh.jpeg" alt="Saurabh"><p>Saurabh Pandey</p></div>
+        <div class="team-card"><img src="assets/team/ratan.jpeg" alt="Ratan"><p>Ratan Gupta</p></div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================================================
+       JOIN QIFORGE (FORM)
+       ================================================== -->
+  <section id="join" class="join">
+    <div class="container">
+      <h2>Join QiForge</h2>
+      <p>We’re always looking for passionate developers, designers, and creators. Let’s build something great together.</p>
+
+      <form class="join-form" onsubmit="return false;">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="4" placeholder="Tell us about your interests..." required></textarea>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ==================================================
+       FOOTER
+       ================================================== -->
+  <footer>
+    <div class="footer-icons">
+      <a href="mailto:contact@qiforge.site" title="Email" aria-label="Email">
+        <img src="assets/icons/mail.svg" alt="Email Icon">
+      </a>
+      <a href="https://discord.gg/qiforge" title="Discord" target="_blank" aria-label="Discord">
+        <img src="assets/icons/discord.svg" alt="Discord Icon">
+      </a>
+      <a href="https://github.com/QiForge" title="GitHub" target="_blank" aria-label="GitHub">
+        <img src="assets/icons/github.svg" alt="GitHub Icon">
+      </a>
+    </div>
+    <p>© 2025 QiForge. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
