@@ -26,7 +26,8 @@
   <meta name="theme-color" content="#0b1221">
 
   <!-- Fonts & Stylesheet -->
-<link rel="stylesheet" href="fonts.css">
+  <link rel="preload" href="fonts.css" as="style" onload="this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="style.css"></noscript>
   <link rel="preload" href="style.css" as="style" onload="this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="style.css"></noscript>
   <script defer src="script.js"></script>

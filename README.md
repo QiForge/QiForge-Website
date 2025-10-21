@@ -38,7 +38,7 @@ This repository hosts the full source code for the **official QiForge website**,
 | **Version Control** | Git & GitHub |
 | **Hosting** | Netlify (CI/CD) |
 | **Domain** | Hostinger (`qiforge.site`) |
-| **Current Version** | v0.1 |
+| **Current Version** | v0.2 |
 
 ---
 
