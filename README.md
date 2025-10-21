@@ -1,14 +1,14 @@
 # 🌐 QiForge — Official Organization Website
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/2aba665e-38af-4e7f-8cad-b2926827c261/deploy-status)](https://app.netlify.com/sites/qiforge-website/deploys)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
-![Netlify](https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)
-![Hostinger](https://img.shields.io/badge/Hostinger-673AB7?style=for-the-badge&logoColor=white)
+![Hostinger](https://img.shields.io/badge/Hostinger-673AB7?style=for-the-badge&logo=hostinger&logoColor=white)
+[![Deployment Status](https://img.shields.io/github/deployments/QiForge/QiForge-Website/Production?label=Deployment&logo=github&style=for-the-badge)](https://qiforge.org)
+![GitHub last commit](https://img.shields.io/github/last-commit/QiForge/QiForge-Website?style=for-the-badge)
 
-> 🔗 **Live Website:** [https://qiforge.site](https://qiforge.site)
+> 🔗 **Live Website:** [https://qiforge.org](https://qiforge.org)
 
 ---
 
@@ -36,9 +36,9 @@ This repository hosts the full source code for the **official QiForge website**,
 | **Frontend** | HTML5, CSS3, JavaScript (Vanilla) |
 | **UI Effects** | CSS Transitions, Parallax, Glassmorphism |
 | **Version Control** | Git & GitHub |
-| **Hosting** | Netlify (CI/CD) |
-| **Domain** | Hostinger (`qiforge.site`) |
-| **Current Version** | v0.2 |
+| **Hosting** | Hostinger (CI/CD via GitHub Integration) |
+| **Domain** | Hostinger (`qiforge.org`) |
+| **Current Version** | v0.3 |
 
 ---
 
@@ -48,26 +48,81 @@ The QiForge site uses a **fully automated deployment pipeline**:
 
 1. Edit and commit changes locally on your system.  
 2. Push updates to the GitHub `main` branch.  
-3. Netlify automatically rebuilds and redeploys the site.  
-4. Updates instantly go live at [https://qiforge.site](https://qiforge.site).  
+3. Hostinger automatically rebuilds and redeploys the site.  
+4. Updates instantly go live at [https://qiforge.org](https://qiforge.org).  
 
-🔐 Includes automatic HTTPS via **Let’s Encrypt SSL**.
+🔐 Includes automatic HTTPS via **Hostinger Free SSL**.
 
 ---
 
 ## 📂 Project Structure
 
 ```
-/
-├── index.html          # Main landing page
-├── style.css           # Global styles (carousels, sidebar, etc.)
-├── script.js           # Interactive scripts and animations
+QiForge-Website-main/
+├── .gitignore
+├── LICENCE
+├── README.md
+├── fonts.css
+├── index.html
+├── script.js
+├── style.css
+├── .vscode/
+│   ├── settings.json
 ├── assets/
-│   ├── team/           # Team member photos
-│   ├── icons/          # Site icons, logos, and favicon
-│   └── projects/       # Sneak Peek project previews
-├── LICENSE             # QiForge Open Learning License
-└── README.md           # This file
+│   ├── background-img_converted.webp
+│   ├── carousel/
+│   │   ├── project-img-1.png
+│   │   ├── project-img-2.png
+│   │   ├── project-img-3.png
+│   │   ├── project-img-4.png
+│   │   ├── project-img-5.png
+│   ├── icons/
+│   │   ├── codelead.png
+│   │   ├── discord.svg
+│   │   ├── favicon.png
+│   │   ├── github.svg
+│   │   ├── hostel-mess-management.png
+│   │   ├── mail.svg
+│   │   ├── student-dashboard.png
+│   ├── team/
+│   │   ├── abhayjeet.jpeg
+│   │   ├── amit.jpeg
+│   │   ├── anshu.jpeg
+│   │   ├── chandan.jpeg
+│   │   ├── krish.jpeg
+│   │   ├── naval.jpeg
+│   │   ├── prashant.jpeg
+│   │   ├── ratan.jpeg
+│   │   ├── sameer.jpeg
+│   │   ├── sashikant.jpeg
+│   │   ├── saurabh.jpeg
+│   │   ├── udit.jpeg
+│   │   ├── vikhyat.jpeg
+│   │   ├── vivek.jpeg
+│   │   ├── yogesh.jpeg
+├── data/
+│   ├── members.json
+│   ├── repositories.json
+│   ├── teams.json
+├── fonts/
+│   ├── Inter_18pt-Black.ttf
+│   ├── Inter_18pt-BlackItalic.ttf
+│   ├── Inter_18pt-Bold.ttf
+│   ├── Inter_18pt-BoldItalic.ttf
+│   ├── Inter_18pt-ExtraBold.ttf
+│   ├── Inter_18pt-ExtraBoldItalic.ttf
+│   ├── Inter_18pt-ExtraLight.ttf
+│   ├── Inter_18pt-ExtraLightItalic.ttf
+│   ├── Inter_18pt-Italic.ttf
+│   ├── Inter_18pt-Light.ttf
+│   ├── Inter_18pt-LightItalic.ttf
+│   ├── Inter_18pt-Medium.ttf
+│   ├── Inter_18pt-MediumItalic.ttf
+│   ├── Inter_18pt-Regular.ttf
+│   ├── Inter_18pt-SemiBold.ttf
+│   ├── Inter_18pt-SemiBoldItalic.ttf
+│   ├── Inter_18pt-Thin.ttf
+│   ├── Inter_18pt-ThinItalic.ttf
 ```
 
 ---
@@ -123,9 +178,9 @@ We welcome collaboration and open participation!
 
 - **Design & Development:** QiForge Team  
 - **Effects:** Vanilla JS + CSS Transforms  
-- **Hosting & SSL:** [Netlify](https://www.netlify.com)  
+- **Hosting & SSL:** [Hostinger](https://www.hostinger.in)  
 - **Domain Provider:** [Hostinger](https://www.hostinger.in)  
-- **Organization Website:** [qiforge.site](https://qiforge.site)
+- **Organization Website:** [qiforge.org](https://qiforge.org)
 
 ---
 
@@ -136,4 +191,4 @@ Follow QiForge’s updates, projects, and collaborations as we continue building
 
 ---
 
-📅 **Last Updated:** 20 October 2025
+📅 **Last Updated:** 22 October 2025
