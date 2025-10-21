@@ -5,27 +5,33 @@
     "description": "Focused on building the Hostel & Mess Management System for colleges under QiForge.",
     "members": ["M0001", "M0011", "M0010", "M0007"],
     "repositories": ["R0004"],
-    "created_on": "2025-10-19",
     "active": true,
     "logo_url": "assets/icons/logo/T0001.png"
   },
   {
     "id": "T0002",
     "name": "Code Dragon",
-    "description": "Developing AI-based academic scheduling tools for campus optimization.",
-    "members": ["M0006", "M0008"],
+    "description": "Developing academic scheduling tools for campus optimization.",
+    "members": ["M0006", "M0003"],
     "repositories": ["R0002"],
-    "created_on": "2025-10-20",
     "active": true,
     "logo_url": "assets/icons/logo/T0002.png"
   },
   {
     "id": "T0003",
     "name": "Code Leopard",
-    "description": "Working on the QiForge internal dashboard and project monitoring system.",
-    "members": ["M0009", "M0003"],
+    "description": "Working on the repository 'Notic and result dashboard'.",
+    "members": ["M0004", "M0002", "M0005"],
     "repositories": ["R0003", "R0005"],
-    "created_on": "2025-10-20",
+    "active": true,
+    "logo_url": "assets/icons/logo/T0003.png"
+  },
+  {
+    "id": "T0004",
+    "name": "Code Lead",
+    "description": "Working on the QiForge Official Website.",
+    "members": ["M0001", "M0006"],
+    "repositories": ["R0001"],
     "active": true,
     "logo_url": "assets/icons/logo/T0003.png"
   }
