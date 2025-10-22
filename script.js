@@ -103,7 +103,7 @@ window.addEventListener("scroll", () => {
     skipBtn.classList.add("fade-out");
     setTimeout(() => {
       skipBtn.classList.add("scrolled");
-      skipBtn.innerHTML = "&and;";
+      skipBtn.innerHTML = "↑";
       skipBtn.setAttribute("href", "#top");
       skipBtn.setAttribute("aria-label", "Back to top");
       skipBtn.classList.remove("fade-out");
@@ -115,7 +115,7 @@ window.addEventListener("scroll", () => {
     skipBtn.classList.add("fade-out");
     setTimeout(() => {
       skipBtn.classList.remove("scrolled");
-      skipBtn.innerHTML = "&gt;";
+      skipBtn.innerHTML = "↓";
       skipBtn.setAttribute("href", "#next-section");
       skipBtn.setAttribute("aria-label", "Scroll down");
       skipBtn.classList.remove("fade-out");
