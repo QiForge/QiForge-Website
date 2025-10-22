@@ -101,14 +101,17 @@
   </section>
 
   <!-- ==================================================
-       CORE CARDS
+       CORE NAVIGATION CARDS (PROJECTS / TEAMS / MEMBERS)
        ================================================== -->
   <section class="core-cards">
     <div class="container">
       <h2>Explore QiForge</h2>
+
       <div class="core-grid">
-        <article class="core-card">
+        <!-- Projects Card -->
+        <article class="core-card" aria-labelledby="core-projects">
           <div class="core-icon" aria-hidden="true">
+            <!-- inline SVG - Projects -->
             <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect x="8" y="10" width="32" height="20" rx="2.5" stroke="white" stroke-width="2.5"/>
               <path d="M6 34h36" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
@@ -116,28 +119,50 @@
               <path d="M26 26l4-4-4-4" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
           </div>
-          <h3>Projects</h3>
+          <h3 id="core-projects">Projects</h3>
           <p>Explore our innovative student projects and initiatives across multiple domains.</p>
           <a href="#projects" class="btn btn-tertiary">View Projects</a>
         </article>
-        <article class="core-card">
+
+        <!-- Teams Card -->
+        <article class="core-card" aria-labelledby="core-teams">
           <div class="core-icon" aria-hidden="true">
+            <!-- inline SVG - Teams -->
             <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
               <circle cx="24" cy="18" r="5" stroke="white" stroke-width="2.5"/>
               <circle cx="14" cy="20" r="3.5" stroke="white" stroke-width="2.5"/>
               <circle cx="34" cy="20" r="3.5" stroke="white" stroke-width="2.5"/>
               <path d="M11 31c0-4 5-7 9-7h8c4 0 9 3 9 7" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M8 31c0-3 3.5-5.5 7-5.5" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M40 31c0-3-3.5-5.5-7-5.5" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
             </svg>
           </div>
-          <h3>Teams</h3>
+          <h3 id="core-teams">Teams</h3>
           <p>Discover our development teams and how they collaborate to build the QiForge ecosystem.</p>
           <a href="#teams" class="btn btn-tertiary">Meet Teams</a>
+        </article>
+
+        <!-- Members Card -->
+        <article class="core-card" aria-labelledby="core-members">
+          <div class="core-icon" aria-hidden="true">
+            <!-- inline SVG - Members -->
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="19" cy="18" r="5" stroke="white" stroke-width="2.5"/>
+              <path d="M8 32c0-5.2 6-8 11-8s11 2.8 11 8" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M30 27l3.8 3.8L40 24.5" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 id="core-members">Members</h3>
+          <p>Meet the people behind QiForge’s creativity, leadership, and continuous innovation.</p>
+          <a href="#members" class="btn btn-tertiary">View Members</a>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- TEAM CAROUSEL (with lazy loading) -->
+  <!-- ==================================================
+       Team Carousel
+       ================================================== -->
   <section class="team-carousel-section" id="teams">
     <h2>Meet the Team</h2>
     <div class="team-slider">
