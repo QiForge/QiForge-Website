@@ -625,6 +625,24 @@ header {
   }
 }
 
+/* Prevent inline gaps in carousel tracks */
+.team-track, .peek-track {
+  font-size: 0;
+}
+
+/* Restore font-size inside cards */
+.team-card, .peek-card {
+  font-size: initial;
+}
+
+/* Ensure images behave predictably */
+.team-track img, .peek-track img {
+  display: block;
+  width: auto;
+  height: auto;
+}
+
+
 /* ==================================================
    SNEAK PEEK — PURE CSS INFINITE CAROUSEL WITH PEEK
    ================================================== */

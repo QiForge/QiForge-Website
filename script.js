@@ -2,6 +2,13 @@ window.addEventListener("load", () => {
   document.body.classList.add("loaded");
 });
 
+// Ensure both carousels actually start animating once the page loads
+window.addEventListener("load", () => {
+  document.querySelectorAll(".team-track, .peek-track").forEach(track => {
+    track.style.animationPlayState = "running";
+  });
+});
+
 // SIDEBAR TOGGLE LOGIC
 const sidebar = document.getElementById("sidebar");
 const overlay = document.getElementById("overlay");
