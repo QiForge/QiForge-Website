@@ -998,3 +998,30 @@ footer p {
     padding: 2.5rem 1rem;
   }
 }
+
+/* ==================================================
+   CLS FIXES
+   ================================================== */
+
+body {
+  font-family: "Inter", Arial, sans-serif;
+  font-size-adjust: 0.5;
+}
+
+/* Prevent header from shifting when fonts load */
+header {
+  min-height: 70px;
+}
+
+/* Delay animation start slightly */
+.team-track,
+.peek-track {
+  animation-play-state: paused;
+  animation-delay: 0.5s;
+}
+
+/* Enable animations after full load */
+body.loaded .team-track,
+body.loaded .peek-track {
+  animation-play-state: running;
+}
