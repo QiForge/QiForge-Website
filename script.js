@@ -62,3 +62,30 @@ peekCards.forEach((card) => {
     setTimeout(() => card.classList.remove("reset"), 250);
   });
 });
+
+// ==================================================
+// Accessibility: Disable focus on hidden sidebar
+// ==================================================
+function toggleSidebarAccessibility(isOpen) {
+  const focusables = sidebar.querySelectorAll("a, button");
+  focusables.forEach(el => el.tabIndex = isOpen ? 0 : -1);
+}
+
+function openSidebar() {
+  sidebar.classList.add("open");
+  overlay.classList.add("active");
+  overlay.hidden = false;
+  sidebar.setAttribute("aria-hidden", "false");
+  toggleSidebarAccessibility(true);
+  menuToggle.setAttribute("aria-expanded", "true");
+}
+
+function closeSidebarMenu() {
+  sidebar.classList.remove("open");
+  overlay.classList.remove("active");
+  sidebar.setAttribute("aria-hidden", "true");
+  toggleSidebarAccessibility(false);
+  menuToggle.setAttribute("aria-expanded", "false");
+  setTimeout(() => { overlay.hidden = true; }, 300);
+}
+

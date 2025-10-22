@@ -33,6 +33,26 @@ body {
 }
 
 /* ==================================================
+   Skip Link
+   ================================================== */
+
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 10px;
+  background: #1d4ed8;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  z-index: 2000;
+  transition: top 0.3s ease;
+}
+.skip-link:focus {
+  top: 10px;
+}
+
+
+/* ==================================================
    HEADER + NAVIGATION
    ================================================== */
 
@@ -195,7 +215,7 @@ header {
 }
 
 .sidebar-link:hover {
-  color: #a78bfa;
+  color: #c4b5fd;
   transform: translateX(-6px);
 }
 
@@ -914,7 +934,7 @@ footer {
 
 /* Footer text */
 footer p {
-  color: #64748b;
+  color: #94a3b8;
   font-size: 0.9rem;
 }
 
@@ -937,11 +957,11 @@ footer p {
 
 /* Primary (Bootstrap Purple) */
 .btn-primary {
-  background-color: var(--primary-purple);
+  background-color: #8b5cf6;
   color: #fff;
 }
 .btn-primary:hover {
-  background-color: #6a44a1;
+  background-color: #7c3aed;
   box-shadow: 0 0 10px rgba(121, 82, 179, 0.5);
 }
 
@@ -1036,4 +1056,19 @@ header {
 body.loaded .team-track,
 body.loaded .peek-track {
   animation-play-state: running;
+}
+
+/* ==================================================
+   ACCESSIBILITY IMPROVEMENTS
+   ================================================== */
+
+:focus-visible {
+  outline: 2.5px solid #60a5fa; /* QiForge blue */
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* Prevent focus from being hidden behind sticky header */
+:target {
+  scroll-margin-top: 80px;
 }
