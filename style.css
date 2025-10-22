@@ -635,12 +635,6 @@ header {
   font-size: initial;
 }
 
-/* Ensure images behave predictably */
-.team-track img, .peek-track img {
-  display: block;
-  width: auto;
-  height: auto;
-}
 
 
 /* ==================================================
