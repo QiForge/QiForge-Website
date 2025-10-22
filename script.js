@@ -89,3 +89,51 @@ function closeSidebarMenu() {
   setTimeout(() => { overlay.hidden = true; }, 300);
 }
 
+// ==================================================
+// Glassmorphic Floating Scroll / Back-to-Top Button
+// ==================================================
+const skipBtn = document.getElementById("skip-btn");
+let lastState = "top"; // track current mode
+
+window.addEventListener("scroll", () => {
+  const isScrolled = window.scrollY > 300;
+
+  if (isScrolled && lastState !== "bottom") {
+    // Transition to bottom mode
+    skipBtn.classList.add("fade-out");
+    setTimeout(() => {
+      skipBtn.classList.add("scrolled");
+      skipBtn.innerHTML = "&and;";
+      skipBtn.setAttribute("href", "#top");
+      skipBtn.setAttribute("aria-label", "Back to top");
+      skipBtn.classList.remove("fade-out");
+    }, 200);
+    lastState = "bottom";
+  } 
+  else if (!isScrolled && lastState !== "top") {
+    // Transition back to top mode
+    skipBtn.classList.add("fade-out");
+    setTimeout(() => {
+      skipBtn.classList.remove("scrolled");
+      skipBtn.innerHTML = "&gt;";
+      skipBtn.setAttribute("href", "#next-section");
+      skipBtn.setAttribute("aria-label", "Scroll down");
+      skipBtn.classList.remove("fade-out");
+    }, 200);
+    lastState = "top";
+  }
+});
+
+// Smooth scroll fallback for Safari
+skipBtn.addEventListener("click", (e) => {
+  const targetId = skipBtn.getAttribute("href");
+  const targetEl = document.querySelector(targetId);
+  if (targetEl) {
+    e.preventDefault();
+    window.scrollTo({
+      top: targetEl.offsetTop - 70,
+      behavior: "smooth",
+    });
+  }
+});
+
