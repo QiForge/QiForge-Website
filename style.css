@@ -255,11 +255,13 @@ header {
 /* ==================================================
    HERO SECTION
    ================================================== */
-
 .hero {
   background:
     linear-gradient(rgba(11, 17, 32, 0.92), rgba(11, 17, 32, 0.96)),
-    url('assets/background-img_converted.webp')
+    image-set(
+      url('assets/background-img.avif') type("image/avif"),
+      url('assets/background-img_converted.webp') type("image/webp")
+    )
     center/cover no-repeat;
   color: #fff;
   text-align: center;
