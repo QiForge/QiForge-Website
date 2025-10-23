@@ -131,6 +131,7 @@ QiForge-Website-main/
 
 **Founder & Lead Developer**  
 💡 **Yogesh Kumar Mallik** --> **Founder**
+   
    **Krish Kumar** --> **Lead Developer**
 
 **Names will be added here as one contributes**  
