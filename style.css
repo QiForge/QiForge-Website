@@ -121,6 +121,14 @@ body {
   animation: pulse-glass 3s ease-in-out infinite;
 }
 
+/* Hide skip/back-to-top button on mobile */
+@media (max-width: 768px) {
+  .skip-link {
+    display: none !important;
+  }
+}
+
+
 
 
 /* ==================================================
