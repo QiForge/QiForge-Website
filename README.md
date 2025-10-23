@@ -71,11 +71,11 @@ QiForge-Website-main/
 ├── assets/
 │   ├── background-img_converted.webp
 │   ├── carousel/
-│   │   ├── project-img-1.png
-│   │   ├── project-img-2.png
-│   │   ├── project-img-3.png
-│   │   ├── project-img-4.png
-│   │   ├── project-img-5.png
+│   │   ├── project-img-1.webp
+│   │   ├── project-img-2.webp
+│   │   ├── project-img-3.webp
+│   │   ├── project-img-4.webp
+│   │   ├── project-img-5.webp
 │   ├── icons/
 │   │   ├── codelead.png
 │   │   ├── discord.svg
@@ -85,21 +85,21 @@ QiForge-Website-main/
 │   │   ├── mail.svg
 │   │   ├── student-dashboard.png
 │   ├── team/
-│   │   ├── abhayjeet.jpeg
-│   │   ├── amit.jpeg
-│   │   ├── anshu.jpeg
-│   │   ├── chandan.jpeg
-│   │   ├── krish.jpeg
-│   │   ├── naval.jpeg
-│   │   ├── prashant.jpeg
-│   │   ├── ratan.jpeg
-│   │   ├── sameer.jpeg
-│   │   ├── sashikant.jpeg
-│   │   ├── saurabh.jpeg
-│   │   ├── udit.jpeg
-│   │   ├── vikhyat.jpeg
-│   │   ├── vivek.jpeg
-│   │   ├── yogesh.jpeg
+│   │   ├── abhayjeet.webp
+│   │   ├── amit.webp
+│   │   ├── anshu.webp
+│   │   ├── chandan.webp
+│   │   ├── krish.webp
+│   │   ├── naval.webp
+│   │   ├── prashant.webp
+│   │   ├── ratan.webp
+│   │   ├── sameer.webp
+│   │   ├── sashikant.webp
+│   │   ├── saurabh.webp
+│   │   ├── udit.webp
+│   │   ├── vikhyat.webp
+│   │   ├── vivek.webp
+│   │   ├── yogesh.webp
 ├── data/
 │   ├── members.json
 │   ├── repositories.json
