@@ -43,8 +43,8 @@ body {
 
 .skip-link {
   position: fixed;
-  top: 18px;
-  left: 18px;
+  top: 50px;
+  left: 30px;
   width: 34px;
   height: 34px;
   border-radius: 50%;
