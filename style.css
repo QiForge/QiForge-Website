@@ -37,99 +37,6 @@ body {
   margin: 0 auto;
 }
 
-/* ==================================================
-   Ultra Glassmorphic Floating Scroll / Back-to-Top Button
-   ================================================== */
-
-.skip-link {
-  position: fixed;
-  top: 50px;
-  left: 30px;
-  width: 34px;
-  height: 34px;
-  border-radius: 50%;
-  font-size: 1rem;
-  line-height: 34px;
-  text-align: center;
-  color: rgba(255, 255, 255, 0.85);
-  text-decoration: none;
-  z-index: 2000;
-  cursor: pointer;
-
-  /* ✨ Glassmorphism core */
-  background: rgba(255, 255, 255, 0.08);
-  backdrop-filter: blur(18px) saturate(180%) brightness(1.1);
-  -webkit-backdrop-filter: blur(18px) saturate(180%) brightness(1.1);
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  box-shadow:
-    0 2px 6px rgba(255, 255, 255, 0.1) inset,
-    0 4px 12px rgba(0, 0, 0, 0.25);
-
-  transition: all 0.6s ease;
-  opacity: 0.85;
-}
-
-/* Glowing hover effect */
-.skip-link:hover {
-  transform: scale(1.12);
-  background: rgba(255, 255, 255, 0.14);
-  border-color: rgba(255, 255, 255, 0.4);
-  box-shadow:
-    0 0 6px rgba(255, 255, 255, 0.3),
-    0 6px 18px rgba(0, 0, 0, 0.25);
-  opacity: 1;
-}
-
-/* When scrolled (back to top state) */
-.skip-link.scrolled {
-  top: auto;
-  bottom: 28px;
-  left: 28px;
-  background: rgba(30, 58, 138, 0.25);
-  border-color: rgba(255, 255, 255, 0.35);
-  backdrop-filter: blur(20px) saturate(180%) brightness(1.05);
-  -webkit-backdrop-filter: blur(20px) saturate(180%) brightness(1.05);
-  box-shadow:
-    0 2px 8px rgba(255, 255, 255, 0.05) inset,
-    0 8px 22px rgba(0, 0, 0, 0.25);
-}
-
-/* Smooth fade transition */
-.skip-link.fade-out {
-  opacity: 0;
-  transform: scale(0.8);
-  pointer-events: none;
-}
-
-/* Focus-visible for keyboard users */
-.skip-link:focus-visible {
-  outline: 2px solid rgba(147, 197, 253, 0.8);
-  outline-offset: 2px;
-}
-
-/* Offset for sticky header */
-:target {
-  scroll-margin-top: 80px;
-}
-
-@keyframes pulse-glass {
-  0%, 100% { box-shadow: 0 2px 6px rgba(255, 255, 255, 0.15), 0 4px 12px rgba(0, 0, 0, 0.2); }
-  50% { box-shadow: 0 0 8px rgba(255, 255, 255, 0.25), 0 6px 18px rgba(0, 0, 0, 0.25); }
-}
-
-.skip-link {
-  animation: pulse-glass 3s ease-in-out infinite;
-}
-
-/* Hide skip/back-to-top button on mobile */
-@media (max-width: 768px) {
-  .skip-link {
-    display: none !important;
-  }
-}
-
-
-
 
 /* ==================================================
    HEADER + NAVIGATION
@@ -470,6 +377,60 @@ header {
   margin-bottom: 1.2rem;
   line-height: 1.6;
 }
+
+/* ==================================================
+   WHAT WE BUILD
+   ================================================== */
+.what-we-build {
+  padding: 4rem 1rem;
+  background: #0f162b;
+  text-align: center;
+}
+
+.what-we-build h2 {
+  color: #fff;
+  font-size: 1.9rem;
+  margin-bottom: 1rem;
+}
+
+.build-subtext {
+  color: var(--text-light);
+  max-width: 750px;
+  margin: 0 auto 2.5rem;
+  font-size: 1.05rem;
+}
+
+.build-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+}
+
+.build-card {
+  background: #111827;
+  border-radius: 14px;
+  padding: 1.8rem;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.build-card:hover {
+  transform: translateY(-6px);
+  background: #1e293b;
+}
+
+.build-card h3 {
+  color: #fff;
+  margin-bottom: 0.6rem;
+  font-size: 1.15rem;
+}
+
+.build-card p {
+  color: var(--text-light);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
 
 /* ==================================================
    FEATURED PROJECTS
@@ -1017,6 +978,89 @@ footer p {
   font-size: 0.9rem;
 }
 
+/* ==================================================
+   FAQ ACCORDION — QIFORGE STYLE
+   ================================================== */
+.faq {
+  padding: 4rem 1rem;
+  background: #0f162b;
+  text-align: center;
+}
+
+.faq h2 {
+  color: #fff;
+  font-size: 1.9rem;
+  margin-bottom: 2rem;
+}
+
+.faq-accordion {
+  max-width: 780px;
+  margin: 0 auto;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.faq-item {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 14px;
+  backdrop-filter: blur(12px);
+  padding: 0;
+  overflow: hidden;
+  transition: background 0.3s ease;
+}
+
+.faq-item.open {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255,255,255,0.25);
+}
+
+.faq-question {
+  width: 100%;
+  text-align: left;
+  padding: 1.1rem 1.4rem;
+  background: #0b1221;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-question::after {
+  content: "+";
+  transition: transform 0.3s ease;
+  font-size: 1.2rem;
+  opacity: 0.8;
+}
+
+.faq-item.open .faq-question::after {
+  transform: rotate(45deg);
+  opacity: 1;
+}
+
+.faq-answer {
+  background: #0b1221;
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 1.4rem;
+  color: var(--text-light);
+  font-size: 0.95rem;
+  line-height: 1.55;
+  transition: max-height 0.35s ease, padding 0.3s ease;
+}
+
+.faq-item.open .faq-answer {
+  padding: 0.6rem 1.4rem 1.2rem;
+  max-height: 200px;
+}
+
+
 
 /* ==================================================
    BUTTON SYSTEM
@@ -1151,3 +1195,97 @@ body.loaded .peek-track {
 :target {
   scroll-margin-top: 80px;
 }
+
+/* ==================================================
+   Ultra Glassmorphic Floating Scroll / Back-to-Top Button
+   ================================================== */
+
+.skip-link {
+  position: fixed;
+  top: 50px;
+  left: 30px;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  font-size: 1rem;
+  line-height: 34px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.85);
+  text-decoration: none;
+  z-index: 2000;
+  cursor: pointer;
+
+  /* ✨ Glassmorphism core */
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(18px) saturate(180%) brightness(1.1);
+  -webkit-backdrop-filter: blur(18px) saturate(180%) brightness(1.1);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow:
+    0 2px 6px rgba(255, 255, 255, 0.1) inset,
+    0 4px 12px rgba(0, 0, 0, 0.25);
+
+  transition: all 0.6s ease;
+  opacity: 0.85;
+}
+
+/* Glowing hover effect */
+.skip-link:hover {
+  transform: scale(1.12);
+  background: rgba(255, 255, 255, 0.14);
+  border-color: rgba(255, 255, 255, 0.4);
+  box-shadow:
+    0 0 6px rgba(255, 255, 255, 0.3),
+    0 6px 18px rgba(0, 0, 0, 0.25);
+  opacity: 1;
+}
+
+/* When scrolled (back to top state) */
+.skip-link.scrolled {
+  top: auto;
+  bottom: 28px;
+  left: 28px;
+  background: rgba(30, 58, 138, 0.25);
+  border-color: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(20px) saturate(180%) brightness(1.05);
+  -webkit-backdrop-filter: blur(20px) saturate(180%) brightness(1.05);
+  box-shadow:
+    0 2px 8px rgba(255, 255, 255, 0.05) inset,
+    0 8px 22px rgba(0, 0, 0, 0.25);
+}
+
+/* Smooth fade transition */
+.skip-link.fade-out {
+  opacity: 0;
+  transform: scale(0.8);
+  pointer-events: none;
+}
+
+/* Focus-visible for keyboard users */
+.skip-link:focus-visible {
+  outline: 2px solid rgba(147, 197, 253, 0.8);
+  outline-offset: 2px;
+}
+
+/* Offset for sticky header */
+:target {
+  scroll-margin-top: 80px;
+}
+
+@keyframes pulse-glass {
+  0%, 100% { box-shadow: 0 2px 6px rgba(255, 255, 255, 0.15), 0 4px 12px rgba(0, 0, 0, 0.2); }
+  50% { box-shadow: 0 0 8px rgba(255, 255, 255, 0.25), 0 6px 18px rgba(0, 0, 0, 0.25); }
+}
+
+.skip-link {
+  animation: pulse-glass 3s ease-in-out infinite;
+}
+
+/* Hide skip/back-to-top button on mobile */
+@media (max-width: 768px) {
+  .skip-link {
+    display: none !important;
+  }
+}
+
+
+
