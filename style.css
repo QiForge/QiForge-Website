@@ -1060,6 +1060,31 @@ footer p {
   max-height: 200px;
 }
 
+.faq-answer ul.faq-list-roles {
+  margin: 0.6rem 0 1rem 1.2rem;
+  padding: 0;
+  list-style: none;
+}
+
+.faq-answer ul.faq-list-roles li {
+  position: relative;
+  margin: 0.3rem 0;
+  padding-left: 1rem;
+  color: var(--text-light);
+  font-size: 0.95rem;
+}
+
+/* Forge-style ember bullet */
+.faq-answer ul.faq-list-roles li::before {
+  content: "•";
+  color: #8b5cf6; /* QiForge purple */
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 1.2rem;
+  line-height: 1rem;
+}
+
 
 
 /* ==================================================
