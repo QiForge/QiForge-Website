@@ -1,4 +1,4 @@
-QiForge Open Learning License (QOLL-1.0)
+# QiForge Open Learning License (QOLL-1.0)
 Copyright (c) 2025 QiForge Organization
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
